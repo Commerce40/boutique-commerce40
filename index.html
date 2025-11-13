@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commerce 4.0 | Gadgets astucieux pour le quotidien</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Snipcart CSS -->
+    <link rel="preconnect" href="https://app.snipcart.com">
+    <link rel="stylesheet" href="https://app.snipcart.com/themes/v3.4.1/default/snipcart.css" />
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899); }
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="/" class="flex items-center">
+                <img src="images/Logo C40.png" alt="Logo Commerce 4.0" class="h-10 mr-3">
+                <span class="text-xl font-bold gradient-text">Commerce 4.0</span>
+            </a>
+
+            <!-- Navigation Links (Desktop) -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-600 hover:text-blue-500">Accueil</a>
+                <a href="#" class="text-gray-600 hover:text-blue-500">Tous les Gadgets</a>
+                <a href="#" class="text-gray-600 hover:text-blue-500">Contact</a>
+            </div>
+
+            <!-- Cart Icon -->
+            <button class="snipcart-checkout flex items-center text-gray-600 hover:text-blue-500">
+                <i class="fas fa-shopping-cart text-2xl"></i>
+                <span class="snipcart-items-count ml-2 text-sm font-bold bg-pink-500 text-white rounded-full w-5 h-5 flex items-center justify-center">0</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="gradient-bg text-white text-center py-20 px-6">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Gadgets astucieux, vie simplifiée.</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">Découvrez notre sélection de petits gadgets indispensables qui facilitent vraiment votre quotidien.</p>
+            <a href="#produits" class="bg-white text-blue-500 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-200 transition">Voir les nouveautés</a>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section id="produits" class="py-16">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Notre Sélection du Moment</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <!-- EXEMPLE DE PRODUIT 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition">
+                        <img src="images/support-voiture.jpg" alt="Support Téléphone Voiture" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Support Voiture ONESAM OS-F32</h3>
+                            <p class="text-gray-700 text-lg font-semibold mb-4">6 500 FCFA</p>
+                            <button 
+                                class="snipcart-add-item w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 transition"
+                                data-item-id="support-voiture-01"
+                                data-item-price="6500"
+                                data-item-url="/"
+                                data-item-name="Support Voiture ONESAM OS-F32"
+                                data-item-image="images/support-voiture.jpg">
+                                <i class="fas fa-cart-plus mr-2"></i> Ajouter au panier
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- EXEMPLE DE PRODUIT 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition">
+                        <img src="images/mini-projecteur.jpg" alt="Mini Projecteur Portable" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Mini Projecteur Portable HD</h3>
+                            <p class="text-gray-700 text-lg font-semibold mb-4">35 000 FCFA</p>
+                            <button 
+                                class="snipcart-add-item w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 transition"
+                                data-item-id="projecteur-hd-02"
+                                data-item-price="35000"
+                                data-item-url="/"
+                                data-item-name="Mini Projecteur Portable HD"
+                                data-item-image="images/mini-projecteur.jpg">
+                                <i class="fas fa-cart-plus mr-2"></i> Ajouter au panier
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Ajoutez d'autres produits ici en copiant le modèle -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section class="bg-white py-16">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-12">Pourquoi Choisir Commerce 4.0 ?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="flex flex-col items-center">
+                        <div class="w-20 h-20 flex items-center justify-center gradient-bg rounded-full text-white text-3xl mb-4">
+                            <i class="fas fa-truck-fast"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Livraison Rapide</h3>
+                        <p class="text-gray-600">Recevez vos gadgets chez vous en 24 à 72h, partout au Sénégal.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-20 h-20 flex items-center justify-center gradient-bg rounded-full text-white text-3xl mb-4">
+                            <i class="fas fa-shield-heart"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Paiement 100% Sécurisé</h3>
+                        <p class="text-gray-600">Payez à la livraison en toute confiance par cash ou mobile money.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-20 h-20 flex items-center justify-center gradient-bg rounded-full text-white text-3xl mb-4">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Service Client Réactif</h3>
+                        <p class="text-gray-600">Une question ? Notre équipe est à votre écoute pour vous aider.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Commerce 4.0 - Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Snipcart JS & Config -->
+    <script async src="https://app.snipcart.com/themes/v3.4.1/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="ZDdjYjg1NmEtYmE2NC00MDJmLWI4NGUtNTZkYTIwNmI0MjA3NjM4OTg2NDg0ODg1MDgzNzk0"></div>
+
+</body>
+</html>
